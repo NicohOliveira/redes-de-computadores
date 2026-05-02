@@ -36,6 +36,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+#LaTeX
+*.aux, *.log, *.nav, *.out, *.nsm, *.toc, *.gz
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
