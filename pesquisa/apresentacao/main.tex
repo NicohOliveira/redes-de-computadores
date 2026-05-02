@@ -1,0 +1,81 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+
+% TEMA E IDENTIDADE VISUAL 
+\usetheme{Madrid} 
+\useoutertheme{miniframes} 
+\usecolortheme{whale} 
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\setbeamercolor{block title example}{bg=green!60!black, fg=white}
+\setbeamercolor{block body example}{bg=green!10, fg=black}
+
+%pacotes
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% capa
+
+% o texto entre colchetes [] é o que aparece no rodapé de todos os slides
+\title[Redes de Sensores Sem Fio]{Redes de Sensores Sem Fio}
+\subtitle{Fundamentos, Segurança e o Futuro com Edge AI}
+\author[Serafim \& Oliveira]{Waldemar Serafim Neto \and Nicolas Henrique Lima de Oliveira}
+\institute[UEL]{Universidade Estadual de Londrina}
+\date{2026}
+
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+% slide 1: Capa
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% slide 2: Sumário
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+% ==========================================
+
+% estrutura inputs
+% ==========================================
+% quando fizer as secoes, apga o % pra descomentar
+
+% \input{secoes/1_introducao}
+% \input{secoes/2_arquitetura}
+% \input{secoes/3_camadas}
+% \input{secoes/4_roteamento}
+% \input{secoes/5_seguranca}
+% \input{secoes/6_futuro_ia}
+% \input{secoes/7_conclusao}
+
+% ==========================================
+
+% exemplos
+
+%==========================================
+
+\section{Introdução} % O comando \section é o que cria a bolinha no topo
+\begin{frame}{Início do Trabalho}
+    teste com bolinha no topo
+    
+    em baixo no rodapé tem nosso nomee, titulo e ano
+\end{frame}
+
+\section{Camada Física} 
+\begin{frame}{Exemplos de Blocos}
+    \begin{block}{Definição Técnica}
+        Texto padrão para conceitos e fundamentos das RSSF.
+    \end{block}
+
+    \begin{exampleblock}{Exemplo Prático (Página 3)}
+        Este é o bloco verde para exemplos. Caso a gente queira adicionar mais blocos estilizados é só por. Mas por enquanto coloquei só esses dois.
+    \end{exampleblock}
+\end{frame}
+
+\end{document}
