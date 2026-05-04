@@ -1,0 +1,10 @@
+\babel@toc {portuguese}{}\relax 
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
+\beamer@sectionintoc {2}{Visão Geral e Aplicações}{7}{0}{2}
+\beamer@sectionintoc {3}{Camada Física e Enlace}{18}{0}{3}
+\beamer@sectionintoc {4}{Protocolos de Roteamento e Topologia}{22}{0}{4}
+\beamer@sectionintoc {5}{Segurança em Ambientes Hostis}{35}{0}{5}
+\beamer@sectionintoc {6}{O Futuro: Edge AI}{43}{0}{6}
+\beamer@sectionintoc {7}{Conclusão}{46}{0}{7}
+\beamer@sectionintoc {8}{Introdução}{49}{0}{8}
+\beamer@sectionintoc {9}{Camada Física}{51}{0}{9}
