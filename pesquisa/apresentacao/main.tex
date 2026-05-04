@@ -27,12 +27,26 @@
 
 
 \setbeamertemplate{navigation symbols}{}
+\definecolor{uniblue}{RGB}{0, 51, 102}
 
+\AtBeginSection[]{
+  {
+  \setbeamercolor{background canvas}{bg=uniblue} 
+  \begin{frame}[plain]
+    \centering
+    \begin{tikzpicture}[remember picture,overlay]
+       \node[at=(current page.center)] {
+         \color{white}\Huge\bfseries\insertsection
+       };
+    \end{tikzpicture}
+  \end{frame}
+  }
+}
 \begin{document}
 
 % slide 1: Capa
 \begin{frame}
-    \titlepage
+    \titlepage{teste}
 \end{frame}
 
 % slide 2: Sumário
@@ -49,10 +63,10 @@
 \input{secoes/1_introducao}
 \input{secoes/2_arquitetura}
 \input{secoes/3_camadas}
-% \input{secoes/4_roteamento}
-% \input{secoes/5_seguranca}
+\input{secoes/4_roteamento}
+\input{secoes/5_seguranca}
 \input{secoes/6_futuro_ia}
-% \input{secoes/7_conclusao}
+\input{secoes/7_conclusao}
 
 % ==========================================
 

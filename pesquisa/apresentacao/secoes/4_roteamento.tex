@@ -1,18 +1,6 @@
-\begin{frame}{Desafio dos Caminhos e Múltiplos Saltos}
-    Os protocolos de roteamento ocorrem dentro da Camada de Rede, que é responsável pelo roteamento de pacote de dados através da rede de sensores. Um problema que essas redes enfrentam é a bateria, pois o consumo de energia usada na comunicação é maior que a utilizada na coleta e processamento de dados, principalmente nas arquiteturas de “salto único” (\textit{single-hop}), onde cada sensor envia os dados diretamente para a estação base (GTA/UFRJ, 2018). 
 
-    
-    Para resolver esse problema, utiliza-se uma arquitetura de “múltiplos saltos” (\textit{multi-hop}) onde cada nó sensor transmite os dados para o nó mais próximo, intermediando a comunicação até chegar na estação base. Como cada nó precisa realizar transmissões de curtas distâncias, essa arquitetura reduz o consumo de energia e aumenta a durabilidade da rede, principalmente quando os nós estão distribuídos em grandes áreas (GTA/UFRJ, 2018).
-\end{frame}
 
-\begin{frame}{Topologias}
-    A topologia de uma RSSF define como será o sistema de comunicação entre os sensores, adotando uma de três abordagens: estrela, árvore ou \textit{cluster} e malha.
-\end{frame}
-
-\begin{frame}{Estrela}
-    A estrela é a mais simples, onde cada nó transmite diretamente para um gateway ou receptor. Essa topologia, entretanto, é limitada pela distância, visto que os nós precisam estar no alcance do \textit{gateway} (GTA/UFRJ, 2018).
-\end{frame}
-
+\section{Protocolos de Roteamento e Topologia}
 \begin{frame}{Árvore (Cluster)}
     A topologia árvore (ou \textit{cluster}) permite a extensão dessas distâncias, uma vez que possibilita que cada nó se comunique com nós roteadores, nos quais são capazes de receber dados e não apenas enviá-los. Porém, um problema dessa topologia é que caso um nó roteador perca a comunicação, a sub-rede responsável por enviar dados ao nó perde a comunicação com o \textit{gateway}.
 \end{frame}
