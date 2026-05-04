@@ -1,0 +1,51 @@
+\section{Camada Física e Enlace}
+
+\begin{frame}{A Camada Física e os Padrões de Rádio}
+    \begin{itemize}
+        \item A Camada Física (PHY) define as especificações elétricas do meio, convertendo dados binários em sinais de Rádio Frequência (RF) ou ópticos.   
+        \item A escolha pela RF é predominante por ser omnidirecional, dispensando o alinhamento geométrico rigoroso exigido por lasers.   
+        \item \textbf{  Padrão IEEE 802.15.4:} Desenvolvido para mitigar instabilidades e priorizar a sobrevivência da rede, operando na frequência de 2.4 GHz com taxas de 250 kbps.   
+        \item Diferente do Wi-Fi (que chega a consumir 400 mA), dispositivos 802.15.4 como o MicaZ operam com correntes baixíssimas (17 a 30 mA) e repouso profundo.   
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Comunicação Óptica e o Projeto Smart Dust}
+    \begin{itemize}
+        \item Em projetos de miniaturização extrema, a camada física óptica ganha destaque.   
+        \item O projeto \textit{Smart Dust} atinge volumes de 1 $mm^3$, utilizando modulação de feixes de luz ou espelhos reflexivos passivos.   
+    \end{itemize}
+    
+    \vspace{0.4cm}
+    
+    \begin{columns}
+        % --- VANTAGENS ---
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Vantagens do Óptico}
+                Altíssimas taxas de transmissão (até 1 Mbps), alcance de 10 a 100 km e consumo energético drasticamente menor que o rádio.   
+            \end{block}
+        \end{column}
+        
+        % --- DESVANTAGENS ---
+        \begin{column}{0.48\textwidth}
+            \begin{alertblock}{Desafios da Implementação}
+                Alta vulnerabilidade a fatores climáticos e exigência de linha de visada direta e desobstruída (direcionalidade).   
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Camada de Enlace: O Problema da Escuta Ociosa}
+    \begin{itemize}
+        \item Enquanto a PHY provê o meio, a Camada de Enlace dita as regras de acesso e busca mitigar o desperdício de energia.   
+        \item O maior gargalo é a \textbf{escuta ociosa} (\textit{idle listening}): o rádio consome energia quase equivalente à recepção ativa apenas aguardando pacotes.   
+    \end{itemize}
+    
+    \vspace{0.3cm}
+    
+    \begin{exampleblock}{Mecanismos de Controle: Duty Cycles}
+        \begin{itemize}
+            \item \textbf{S-MAC (Sensor-MAC):} Força os nós a dormirem e acordarem juntos em intervalos fixos, sincronizando períodos inativos.   
+            \item \textbf{T-MAC (Timeout-MAC):} Torna o ciclo adaptativo. O nó entra em repouso prematuramente se nenhum tráfego for detectado após um tempo determinado (\textit{timeout}).   
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
